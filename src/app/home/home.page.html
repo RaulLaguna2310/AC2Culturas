@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Agricultura
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-label>Média de temperatura no mês de julho:</ion-label>
+    <ion-range aria-label="Range with pin" [pin]="true" [max]="50" [min]="0" [(ngModel)]="temp1"></ion-range>
+
+    <ion-label>Média de temperatura no mês de agosto:</ion-label>
+    <ion-range aria-label="Range with pin" [pin]="true" [max]="50" [min]="0" [(ngModel)]="temp2"></ion-range>
+
+    <ion-label>Média de temperatura no mês de setembro:</ion-label>
+    <ion-range aria-label="Range with pin" [pin]="true" [max]="50" [min]="0" [(ngModel)]="temp3"></ion-range>
+
+    <ion-label>Média de temperatura no mês de outubro:</ion-label>
+    <ion-range aria-label="Range with pin" [pin]="true" [max]="50" [min]="0" [(ngModel)]="temp4"></ion-range>
+
+    <ion-button (click)="abrirTelas()">Calcular</ion-button>
+  </div>
+</ion-content>
